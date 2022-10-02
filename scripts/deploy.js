@@ -28,7 +28,7 @@ async function main() {
 }
 
 // Auto verificate contracts when they are deployed
-async function verify(contractAddress, args) {
+const verify = async (contractAddress, args) => {
     console.log("Verifying contract")
     try {
         await run("verify:verify", {
